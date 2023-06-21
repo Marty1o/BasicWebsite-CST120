@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function reusableCode() {
+            console.log("Called the reusable code function.");
+        }
+        function add(num1, num2) {
+            console.log("Adding numbers " + num1 + " and " + num2);
+            return num1 + num2;
+        }
+        function multiply(num1, num2) {
+            console.log("Multiplying numbers " + num1 + " and " + num2);
+            return num1 * num2;
+        }
+        function displayArray(value, index) {
+            console.log("From displayArray the array value in " + value + " at " + index);
+        }
+
+        function playjs() {
+
+            var age = 60;
+            let name = 'Mark';
+
+            console.log("My name is " + name);
+            console.log("My age is " + age);
+
+            var number1 = 10;
+            var number2 = 5;
+
+            //Math and operators
+            var result = number1 + number2;
+            console.log("Addition result is " + result);
+            result = number1 - number2;
+            console.log("Subtraction result is " + result);
+            result = number1 * number2;
+            console.log("Multiplication result is " + result);
+            result = number1 / number2;
+            console.log("Division result is " + result);
+            ++number1;
+            console.log("Increment result is " + result);
+            --number1;
+            console.log("Decrement result is " + result);
+            result = number1 ** number2;
+            console.log("Exponentiation result is " + result);
+
+            console.log("Equality for 10 is " + (number1 == 10));
+            console.log("Equality for 2 numbers " + (number1 == number2));
+            console.log("Equality for 2 numbers and type " + (number1 === number2));
+            console.log("Inequality for 2 numbers " + (number1 != number2));
+            console.log("Greater than 2 numbers " + (number1 > number2));
+            console.log("Less than 2 numbers " + (number1 < number2));
+
+            //String and numbers
+
+            let string1 = 'A string enclosed in single quotes';
+            console.log("String with single quotes " + string1);
+            let string2 = "A string enclosed in double quotes";
+            console.log("String with double quotes " + string2);
+            let string3 = 'A String \'\"\\ needs to escape';
+            console.log("String with escape char " + string3);
+            let string4 = 'A String \n on two lines';
+            console.log("String with a new line " + string4);
+
+            let string5 = "Grand Canyon University";
+            console.log("String length is " + string5.length);
+            console.log("String in uppercase is " + string5.toUpperCase());
+            console.log("String in lowercase is " + string5.toLowerCase());
+            console.log("Search for Grand is at " + string5.indexOf('Grand'));
+            console.log("Search for Canyon is at " + string5.indexOf('Canyon'));
+
+            //Numbers 
+            let numberStr = "1";
+            let numberNum = 1;
+            console.log("numberStr is a type of " + (typeof numberStr));
+            console.log("numberNum is a type of " + (typeof numberNum));
+
+            //Arrays
+            let shapes1 = ['Triangle', 'Circle', 'Square'];
+            let shapes2 = ['Triangle', 'Circle', 'Square'];
+            console.log("First shape is " + shapes1[0]);
+            console.log("Last shape is " + shapes1[shapes1.length-1]);
+
+            shapes1.sort();
+            console.log("First shape in sorted array is " + shapes1[0]);
+            console.log("Last shape in sorted array is " + shapes1[shapes1.length-1]);
+
+            shapes1.reverse();
+            console.log("First shape in reversed array is " + shapes1[0]);
+            console.log("Last shape in reversed array is " + shapes1[shapes1.length-1]);
+
+            shapes1.push('Rectangle');
+            console.log("Last shape of the array after push is " + shapes1[shapes1.length-1]);
+            shapes1.pop();
+            console.log("Last shape of the array after pop is " + shapes1[shapes1.length-1]);
+
+            for(let shape of shapes1) {
+                console.log("The shape in " + shape);
+            }
+
+            //Dates
+
+            let now = new Date();
+            let birthday = new Date(1960, 9, 17, 0, 0, 0);
+            console.log("Current date and time now is " + now);
+            console.log("Past date and time is " + birthday);
+            console.log("Time difference is " + (now.getYear() - birthday.getYear()));
+
+            //functions 
+            reusableCode();
+            result = add(15, 20);
+            console.log(" Result is " + result);
+            result = multiply(15, 20);
+            console.log(" Result is " + result);
+            shapes1.forEach(displayArray);
+
+
+        }
+    </script>
+</head>
+<body onload="playjs()">
+
+    <h1>Test</h1>
+
+    <p>Test test this is a test inside of playjs html file</p>
+
+
+    
+</body>
+</html>

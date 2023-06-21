@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script>
+        var User = {
+            firstName: "Martin",
+            lastName: "Carranza",
+            age: 26
+        };
+
+        function displayUser() {
+            $("#fn").html(User.firstName);
+            $("#users").find("#ln").html(User.lastName);
+            $("#users").find("#age").html(User.age);
+        }
+
+        $(document).ready(displayUser);
+    </script>
+</head>
+
+<body>
+    <table id="users" width="50%" border="1">
+        <thead>
+            <tr style="background-color: #A0A0A0">
+                <th width="33%">First Name</th>
+                <th width="33%">Last Name</th>
+                <th width="33%">Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="fn">?</td>
+                <td id="ln">?</td>
+                <td id="age">?</td>
+            </tr>
+            <tr>
+                <td style="background-color: #F0F0F0;">Jesus</td>
+                <td style="background-color: #F0F0F0;">Meraz</td>
+                <td style="background-color: #F0F0F0;">22</td>
+            </tr>
+            <tr>
+                <td>Ulises</td>
+                <td>Barranza</td>
+                <td>29</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>

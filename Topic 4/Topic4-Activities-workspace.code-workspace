@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../Topic 1"
+		},
+		{
+			"path": "../Topic 2"
+		},
+		{
+			"path": "../Topic 3"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Topic 4"
+	}
+}

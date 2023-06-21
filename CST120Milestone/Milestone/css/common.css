@@ -1,0 +1,206 @@
+body {
+    margin-top: 20px;
+    margin-left: 20px;
+    background: rgb(231, 229, 229);
+}
+
+h1 {
+    color: #000000;
+    font-family: 'Rancho',
+        serif;
+    font-size: 55px;
+    margin: 0 0 16px;
+    text-shadow: 4px 4px 4px #aaa;
+    
+}
+
+h2 {
+    color: #3030e0;
+    font-family: 'Rancho',
+    serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0 0 8px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+h3 {
+    color: #000000;
+    font-family: 'Rancho',
+    serif;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0 0 8px;
+}
+
+h4 {
+    color: #000000;
+    font-family: 'Rancho',
+    serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 0 8px;
+}
+
+li {
+    color: #000000;
+    font-family: 'Rancho',
+    serif;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+p {
+    font-family: 'Rancho',
+    serif;
+    font-size: 25px;
+    margin: 16px 0 24px;
+}
+
+/* ==============================================
+    table CSS
+    ===========================================                 */
+
+#course-matrix-table {
+    border-collapse: collapse;
+}
+
+#course-matrix-table,
+th,
+td {
+    border: 1px solid black;
+}
+
+#course-matrix-table th {
+    color: white;
+    background-color: #3030e0;
+}
+
+#course-matrix-table tr:first-child {
+    background: #CCC;
+}
+
+#course-matrix-table td:nth-child(1) {
+    font-weight: bold;
+}
+
+/* ==============================================
+    interactive action CSS
+    ===========================================                 */
+
+.obj:hover {
+    background-color: #a1a1f9;
+}
+
+
+.link:hover {
+    font-size: 55px;
+}
+
+.scroll {
+    padding: 1rem;
+    background: #CCC;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 8px;
+    max-width: 900px;
+    width: 85vw;
+    margin: auto;
+}
+
+.image-container {
+    display: flex;
+    gap: 20px;
+    overflow: auto;
+}
+
+.image-container img {
+    height: 281px;
+    width: 500px;
+}
+
+.scroll:hover {
+    max-width: 2000px;
+}
+
+
+/* CSS */
+.btn1 {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.btn1:hover,
+.btn1:focus {
+    background-color: #07c;
+}
+
+.btn1:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.btn1:active {
+    background-color: #0064bd;
+    box-shadow: none;
+}
+
+/* CSS */
+.btn2 {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.btn2:hover,
+.btn2:focus {
+    background-color: #07c;
+}
+
+.btn2:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.btn2:active {
+    background-color: #0064bd;
+    box-shadow: none;
+}

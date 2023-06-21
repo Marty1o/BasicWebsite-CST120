@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/navCommon.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+
+    <script src="jscode/commonJS.js" type="text/javascript"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("table").hide();
+            });
+            $(".btn2").click(function () {
+                $("table").show();
+            });
+        });
+    </script>
+
+
+</head>
+
+<nav>
+    <div class="topnav">
+        <a class="active" href="about.html">About</a>
+        <a href="places.html">Places</a>
+        <a href="">Hobbies</a>
+        <a href="">Events</a>
+        <a href="">Education</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+
+<body>
+
+    <br> 
+    <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()" class=" font-effect-shadow-multiple" align="center">
+        Places I've been to or
+        want to go to!!</h1>
+    <hr>
+
+    <div align="center">
+
+        <table width="50%" id="course-matrix-table">
+            <tr align="center">
+                <th width="20%">Location</th>
+                <th width="10%">Went?</th>
+                <th width="20%">Est Cost (USD)</th>
+                <th width="20%">Length of stay</th>
+            </tr>
+            <tr class="obj">
+                <td align="left">Japan</td>
+                <td align="center"><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                <td align="center">$7,000</td>
+                <td align="center">2 weeks</td>
+            </tr>
+            <tr class="obj">
+                <td align="left">Mexico</td>
+                <td align="center"><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                <td align="center">$2,000</td>
+                <td align="center">1 week</td>
+            </tr>
+            <tr class="obj">
+                <td align="left">Grand Canyon</td>
+                <td align="center"><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                <td align="center">$500</td>
+                <td align="center">3 days</td>
+            </tr>
+            <tr class="obj">
+                <td align="left">Germany</td>
+                <td align="center"><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                <td align="center">$6,000</td>
+                <td align="center">2 weeks</td>
+            </tr>
+            <tr class="obj">
+                <td align="left">Korea</td>
+                <td align="center"><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                <td align="center">$8,000</td>
+                <td align="center">3 weeks</td>
+            </tr>
+            <tr class="obj">
+                <td align="left">Peru</td>
+                <td align="center"><input type="checkbox" name="myTextEditBox" value="checked" /></td>
+                <td align="center">$5,000</td>
+                <td align="center">3 weeks</td>
+            </tr>
+        </table>
+        <br>
+        <button class="btn1">Hide</button>
+        <button class="btn2">Show</button>
+
+        <h2 style="padding: 20px;">Some Videos!</h2>
+
+
+        <div class="scroll">
+            <div class="image-container">
+                <video width="460" height="380" controls>
+                    <source src="media/grandCanyon.mp4" type="video/mp4">
+                    Your Browser does not support this video tag.
+                </video>
+
+                <video width="460" height="380" controls>
+                    <source src="media/mexPyramids.mp4" type="video/mp4">
+                    Your Browser does not support this video tag.
+                </video>
+            </div>
+        </div>
+        
+        <br>
+
+        <h2 style="padding: 20px;">Places I've been to!</h2>
+
+        <div class="scroll">
+            <div class="image-container">
+                <img src="images/mexico.jpg" />
+                <img src="images/mexicoPyr.jpg" />
+                <img src="images/alaska.jpg" />
+                <img src="images/canada.jpg" />
+                <img src="images/brazil.jpg" />
+                <img src="images/mexico.jpg" />
+                <img src="images/mexicoPyr.jpg" />
+                <img src="images/alaska.jpg" />
+                <img src="images/canada.jpg" />
+                <img src="images/brazil.jpg" />
+            </div>
+        </div>
+
+        <br>
+
+        <h2 style="padding: 20px;">Places I want to go to!</h2>
+
+        <div class="scroll">
+            <div class="image-container">
+                <img src="images/koreaPic.jpg" /> 
+                <img src="images/germany.jpg" />
+                <img src="images/japan.jpg" /> 
+                <img src="images/peru.jpg" />
+                <img src="images/koreaPic.jpg" />
+                <img src="images/germany.jpg" />
+                <img src="images/japan.jpg" />
+                <img src="images/peru.jpg" />
+            </div> 
+        </div> 
+        
+        <br>
+        
+
+    </div>
+    <br>
+
+    <div id="copyright"></div>
+</body>
+
+</html>
+
